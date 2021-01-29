@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hill_valley_now_h"
+    android:id="@+id/main_layout">
+
+    <ImageView
+        android:id="@+id/iv_hv_f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hill_valley_f2_h" />
+
+    <ImageView
+        android:id="@+id/iv_hv_f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hill_valley_f_h" />
+
+    <ImageView
+        android:id="@+id/iv_hv_p1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hill_valley_past1_h" />
+
+    <ImageView
+        android:id="@+id/iv_hv_p2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hill_valley_past2_h" />
+
+    <ImageView
+        android:id="@+id/iv_hv_now"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hill_valley_now_h" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:alpha="0.65" >
+
+        <ImageView
+            android:id="@+id/iv_delorian4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delorian4" />
+
+        <ImageView
+            android:id="@+id/iv_delorian3"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delorian3" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:text="@string/year"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:paddingRight="15dp"/>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="00:00:00"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_toLeftOf="@+id/year"
+            tools:ignore="NotSibling" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:scaleX="0.95"
+        android:scaleY="0.85">
+
+        <ImageButton
+            android:id="@+id/bottom_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bottom_f" />
+
+        <ImageButton
+            android:id="@+id/bottom_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bottom_p" />
+    </LinearLayout>
+
+</FrameLayout>
